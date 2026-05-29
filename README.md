@@ -132,7 +132,7 @@ Emulator‑PC‑Games is a growing project focused on learning, experimenting, a
 
 # 🛠️ Installation (Android & iOS)
 
-The Emulator‑PC‑Games project is built for mobile devices only.  
+The Emulator‑PC‑Games project is built for mobile and tablet devices only.  
 It runs directly in your browser or as a PWA app on Android and iOS — no PC installation required, no queue, and no forced login.
 
 ---
