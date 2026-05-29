@@ -84,3 +84,30 @@ This ensures:
 • No sign-in queue
 • No session limits
 
+# 🔐 Sign-in/Login optional
+
+The Emulator-PC-Games system supports an optional sign-in/login flow. You can play without logging in or signing in with additional features in the future, or you can sign in if you want for additional features in the future. There are no forced accounts, no login/sign-in requirements, and no restrictions if you choose to stay logged out.
+
+This Ensures:
+
+• Full Access even when not signed in
+• Optional login for future cloud or sync features
+• No Queue system
+• Unlimited playtime
+
+# 🔐 Full Access Even When Logged Out
+
+The Emulator‑PC‑Games system is designed so that every user has complete access, even without signing in.  
+All current features — and all future planned features — remain fully available whether you are logged in or logged out.
+
+This means:
+
+- You can play all supported games while logged out  
+- You can use all tools and modules without an account  
+- You can access future features such as physics tools, modding utilities, compatibility research, and analysis systems  
+- You never lose functionality by staying logged out  
+- No online checks, no forced authentication, no restrictions  
+
+Signing in is optional, not required.  
+If you choose to sign in later, it may unlock optional extras like cloud sync or saved settings — but core features will always work without login.
+
