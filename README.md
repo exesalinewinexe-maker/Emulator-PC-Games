@@ -111,3 +111,21 @@ This means:
 Signing in is optional, not required.  
 If you choose to sign in later, it may unlock optional extras like cloud sync or saved settings — but core features will always work without login.
 
+# 📘 About Emulator‑PC‑Games
+
+The Emulator‑PC‑Games project is a custom‑built compatibility and analysis environment designed to load, inspect, and experiment with modern PC game files.  
+It focuses on understanding how games like BeamNG.drive, Forza Horizon 5, and Forza Horizon 6 behave internally — including physics, data structures, handling models, and file formats.
+
+Unlike traditional emulators, this project is built for research, testing, and exploration, not for running full games.  
+It provides a safe sandbox where you can analyze game data, test modules, and experiment with future features without restrictions.
+
+The system is designed with maximum freedom:
+
+- No queue system  
+- Unlimited playtime  
+- Full access even when logged out  
+- Optional sign‑in for future cloud features  
+- Modular tools for each supported game  
+- Long‑term expansion planned for more titles  
+
+Emulator‑PC‑Games is a growing project focused on learning, experimenting, and building advanced tools for game analysis — with no limits, no waiting, and no forced login.
