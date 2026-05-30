@@ -154,7 +154,14 @@ It runs directly in your browser or as a PWA app on Android and iOS — no PC in
    This installs the emulator as a PWA.
 
 3. Launch the App  
-   Open the icon from y
+   Open the icon from your home screen.
+You get:
+• Instant Loading
+• No queue
+• Unlimited playtime
+• Full access even when logged out
+
+# 🍎 iOS Installation
 
 1. Open the Emulator Link  
    Use Safari on iPhone or iPad and open:
@@ -178,4 +185,4 @@ https://exesalinewinexe-maker.github.io/Emulator-PC-Games/
    - Optional sign‑in  
 
 4. Offline Support  
-   Once installed, the emulator can run even without internet (depending on your setup).
+   Once installed, the emulator can run even without internet  and you can play anywhere (depending on your setup).
