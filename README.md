@@ -130,10 +130,10 @@ The system is designed with maximum freedom:
 
 Emulator‑PC‑Games is a growing project focused on learning, experimenting, and building advanced tools for game analysis — with no limits, no waiting, and no forced login.
 
-# 🛠️ Installation (Android & iOS)
+# 🛠️ Installation (All devices)
 
-The Emulator‑PC‑Games project is built for mobile and tablet devices only.  
-It runs directly in your browser or as a PWA app on Android and iOS — no PC installation required, no queue, and no forced login.
+The Emulator‑PC‑Games project is built for mobile and tablet and all devices.  
+It runs directly in your browser or as a PWA app on Android and iOS — no queue, and no forced login.
 
 ---
 
@@ -186,3 +186,18 @@ https://exesalinewinexe-maker.github.io/Emulator-PC-Games/
 
 4. Offline Support  
    Once installed, the emulator can run even without internet  and you can play anywhere (depending on your setup).
+
+# 💻 Windows PC
+
+1. Open the link in Chrome, Edge, Firefox, or Brave, and Anything else
+2. (Optional) Install as a PWA:
+• Click the install ap icon in the address bar
+3. Runs instantly with:
+• No queue
+• Unlimited playtime
+• Full Access logged out
+
+# 🍏 macOS (MacBook & iMac)
+
+1. Open the link in Safari, Chrome, Google, and Anything Else
+2.
