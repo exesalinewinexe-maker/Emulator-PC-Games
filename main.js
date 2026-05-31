@@ -1,25 +1,18 @@
-// main.js — Emulator Bootloader
+// main.js — Emulator Bootloader (Polished)
 
 import { Emulator } from "./Emulator.js";
 
-// Wait for the DOM to be ready
 window.addEventListener("DOMContentLoaded", () => {
-    // Create emulator instance, using a canvas with id "screen"
+    // Create emulator instance using the canvas with id "screen"
     const emulator = new Emulator("screen", 320, 240);
 
-    // Example: tiny dummy program (you can replace this later)
-    const program = new Uint8Array([
-        // 0x01, 0x05,  // LOAD A, 5
-        // 0x02, 0x03,  // LOAD B, 3
-        // 0x03,        // ADD A + B
-        // 0xFF         // HALT
-    ]);
-
+    // Optional: Load a program (empty by default)
+    const program = new Uint8Array([]);
     emulator.loadProgram(program, 0);
 
-    // Start the emulator
+    // Start the emulator loop
     emulator.start();
 
-    // Expose for debugging in console
+    // Expose for debugging
     window.emulator = emulator;
 });
