@@ -1,4 +1,4 @@
-// main.js — Emulator Bootloader (Polished)
+// main.js — Emulator Bootloader
 
 import { Emulator } from "./Emulator.js";
 
