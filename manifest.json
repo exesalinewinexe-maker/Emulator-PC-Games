@@ -1,0 +1,17 @@
+{
+  "name": "Emulator-PC-Games",
+  "short_name": "Emulator",
+  "description": "A PC-based game emulator and compiler built from scratch.",
+  "start_url": "index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#111111",
+  "theme_color": "#222222",
+  "icons": [
+    {
+      "src": "Emulator_Icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
