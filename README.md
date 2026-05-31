@@ -130,74 +130,33 @@ The system is designed with maximum freedom:
 
 Emulator‑PC‑Games is a growing project focused on learning, experimenting, and building advanced tools for game analysis — with no limits, no waiting, and no forced login.
 
-# 🛠️ Installation (All devices)
+# 🌍 Platform Support
+Emulator‑PC‑Games runs on every major device and operating system, because it’s built as a browser‑based runtime + optional PWA install.
 
-The Emulator‑PC‑Games project is built for mobile and tablet and all devices.  
-It runs directly in your browser or as a PWA app on Android and iOS — no queue, and no forced login.
+📱 Mobile Devices
+- Android Devices — all brands, all browsers  
+- Xiaomi / Redmi / POCO — Mi Browser, Chrome, Edge  
+- Apple iOS — iPhone & iPad via Safari  
 
----
+💻 Desktop & Laptop
+- Windows PC — Chrome, Edge, Firefox, Brave  
+- macOS — Safari, Chrome  
+- Linux — Ubuntu, Fedora, Debian, etc.  
+- Arch‑Linux — Chromium, Firefox, anything you manually installed  
 
-# 📱 Android Installation
+🌐 Universal Browser Support
+If the device has:
 
-1. Open the Emulator Link  
-   Visit the project URL in any Android browser (Chrome, Edge, Vivo Browser, etc.):
+- a modern browser  
+- JavaScript enabled  
+- WebAssembly support  
 
-   `
-   https://exesalinewinexe-maker.github.io/Emulator-PC-Games/
-   `
+Then Emulator‑PC‑Games works instantly.
 
-2. Install as an App (Recommended)  
-   - Tap ⋮ Menu  
-   - Tap Add to Home screen  
-   - Tap Install  
+📲 Optional PWA Install
+On all supported platforms, you can install it as a Progressive Web App:
 
-   This installs the emulator as a PWA.
-
-3. Launch the App  
-   Open the icon from your home screen.
-You get:
-• Instant Loading
-• No queue
-• Unlimited playtime
-• Full access even when logged out
-
-# 🍎 iOS Installation
-
-1. Open the Emulator Link  
-   Use Safari on iPhone or iPad and open:
-
-https://exesalinewinexe-maker.github.io/Emulator-PC-Games/
-
-2. Install as an App  
-   - Tap the Share button  
-   - Scroll down  
-   - Tap Add to Home Screen  
-   - Tap Add  
-
-   This installs the emulator as a PWA on iOS.
-
-3. Launch the App  
-   Open the icon from your home screen.  
-   The emulator works with:
-   - No queue  
-   - Unlimited playtime  
-   - Full access while logged out  
-   - Optional sign‑in  
-
-4. Offline Support  
-   Once installed, the emulator can run even without internet  and you can play anywhere (depending on your setup).
-
-# 💻 Windows PC
-
-1. Open the link in Chrome, Edge, Firefox, or Brave, and Anything else
-2. (Optional) Install as a PWA:
-• Click the install ap icon in the address bar
-3. Runs instantly with:
-• No queue
-• Unlimited playtime
-• Full Access logged out
-
-# 🍏 macOS (MacBook & iMac)
-
-1. Open the link in Safari, Chrome, Google, and Anything Else
-2.
+- Add to Home Screen (mobile)  
+- Install App (desktop browsers)  
+- Runs offline after first load  
+- Launches like a native app
