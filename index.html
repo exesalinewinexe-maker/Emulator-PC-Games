@@ -1,49 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emulator-PC-Games</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Manifest for PWA -->
-    <link rel="manifest" href="manifest.json">
+  <title>Emulator PC Games</title>
 
-    <!-- Favicon -->
-    <link rel="icon" href="Emulator_Icon.png" type="image/png">
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="manifest.json" />
 
-    <style>
-        body {
-            background: #111;
-            color: #fff;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 0;
-            padding: 20px;
-        }
+  <!-- App Icons -->
+  <link rel="icon" href="icons/icon-192.png" />
+  <link rel="apple-touch-icon" href="icons/icon-512.png" />
 
-        h1 {
-            margin-top: 10px;
-            font-size: 28px;
-            font-weight: 600;
-        }
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#111827" />
 
-        #screen {
-            border: 2px solid #444;
-            image-rendering: pixelated;
-            image-rendering: crisp-edges;
-            margin-top: 20px;
-        }
-    </style>
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Instruction Bar -->
+  <script type="module" src="InstructionBar.js"></script>
+
+  <!-- Register Service Worker -->
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("service-worker.js")
+          .then(() => console.log("Service Worker Registered"))
+          .catch(err => console.error("SW Error:", err));
+      });
+    }
+  </script>
 </head>
+
 <body>
 
-    <h1>Emulator-PC-Games</h1>
+  <!-- Splash Screen -->
+  <div id="splash">
+    <h1>Emulator PC Games</h1>
+    <p>Loading Chaos Mode… 😎🔥</p>
+  </div>
 
-    <!-- Main Emulator Canvas -->
-    <canvas id="screen"></canvas>
+  <!-- Main App -->
+  <main id="app" style="display:none;">
+    <h2>Welcome to Emulator PC Games</h2>
+    <p>Your chaos-powered emulator hub is ready.</p>
 
-    <!-- Bootloader -->
-    <script type="module" src="main.js"></script>
+    <button id="downloadBtn">Download APK</button>
+    <button id="chaosBtn">Enable Chaos Mode</button>
+  </main>
+
+  <!-- App Logic -->
+  <script type="module">
+    import InstructionBar from "./InstructionBar.js";
+
+    // Create the instruction bar
+    const bar = new InstructionBar("Chaos Mode: Standby…");
+
+    // Splash screen fade-out
+    setTimeout(() => {
+      document.getElementById("splash").style.display = "none";
+      document.getElementById("app").style.display = "block";
+      bar.setText("System Ready. Activate Chaos when ready.");
+    }, 1500);
+
+    // Buttons
+    document.getElementById("downloadBtn").onclick = () => {
+      bar.setText("Downloading APK…");
+      window.location.href = "app.apk";
+    };
+
+    document.getElementById("chaosBtn").onclick = () => {
+      bar.setText("CHAOS MODE ACTIVATED 😎🔥 Reality may distort.");
+      document.body.classList.add("chaos");
+    };
+  </script>
 
 </body>
 </html>
