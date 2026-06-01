@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fullscreen Button Example</title>
+  <style>
+    body {
+      background: #111;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 40px;
+    }
+
+    #box {
+      width: 300px;
+      height: 200px;
+      background: #444;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 20px auto;
+      border-radius: 10px;
+    }
+
+    button {
+      padding: 12px 20px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      background: #ff4d4d;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>I 😎🔥 Fullscreen Demo</h1>
+
+  <div id="box">Click the button to fullscreen me</div>
+
+  <button id="fsBtn">Toggle Fullscreen</button>
+
+  <script>
+    const box = document.getElementById('box');
+    const btn = document.getElementById('fsBtn');
+
+    btn.addEventListener('click', () => {
+      if (!document.fullscreenElement) {
+        box.requestFullscreen?.() ||
+        box.webkitRequestFullscreen?.() ||
+        box.msRequestFullscreen?.();
+      } else {
+        document.exitFullscreen?.() ||
+        document.webkitExitFullscreen?.() ||
+        document.msExitFullscreen?.();
+      }
+    });
+  </script>
+
+</body>
+</html>
