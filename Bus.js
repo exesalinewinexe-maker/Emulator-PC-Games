@@ -1,4 +1,4 @@
-# // Bus.js — Connects CPU and Memory
+// Bus.js — Connects CPU and Memory
 
 export class Bus {
     constructor(memory) {
