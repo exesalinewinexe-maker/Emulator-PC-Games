@@ -1,5 +1,5 @@
 // Emulator-PC-Games — launcher.js
-// Handles launching PC games across multiple platforms
+// Handles launching PC games across Windows, Linux, macOS, Android, and Apple mobile devices
 
 import { detectPlatform } from "./platform.js";
 import { startCloudSession } from "./streaming.js";
@@ -22,7 +22,7 @@ function findGame(query) {
     );
 }
 
-// Launch game depending on platform
+// Main launcher
 export async function launchGame(gameName) {
     await loadGames();
 
@@ -48,6 +48,14 @@ export async function launchGame(gameName) {
             launchMacOS(game);
             break;
 
+        case "ios":
+            launchIOS(game);
+            break;
+
+        case "ipad":
+            launchIPad(game);
+            break;
+
         case "android":
             launchAndroid(game);
             break;
@@ -62,7 +70,7 @@ export async function launchGame(gameName) {
 // Windows launcher
 function launchWindows(game) {
     console.log("Running Windows executable for:", game.name);
-    // Placeholder for real .exe launching
+    // Placeholder for .exe launching
 }
 
 // Linux launcher
@@ -75,6 +83,18 @@ function launchLinux(game) {
 function launchMacOS(game) {
     console.log("Launching via macOS virtualization:", game.name);
     startVirtualMachine(game);
+}
+
+// iPhone launcher
+function launchIOS(game) {
+    console.log("iPhone detected — using cloud gaming.");
+    startCloudSession(game);
+}
+
+// iPad launcher
+function launchIPad(game) {
+    console.log("iPad detected — using cloud gaming.");
+    startCloudSession(game);
 }
 
 // Android launcher
