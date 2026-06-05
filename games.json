@@ -1,0 +1,32 @@
+{
+  "games": [
+    {
+      "name": "BeamNG.drive",
+      "short": "BeamNG",
+      "platform": "PC",
+      "category": "Racing / Simulation",
+      "notes": "Ultra‑realistic soft‑body physics driving simulator"
+    },
+    {
+      "name": "Forza Horizon 6",
+      "short": "FH6",
+      "platform": "PC",
+      "category": "Racing",
+      "notes": "Next‑gen open‑world racing experience"
+    },
+    {
+      "name": "Forza Horizon 5",
+      "short": "FH5",
+      "platform": "PC",
+      "category": "Racing",
+      "notes": "Open‑world racing set in Mexico"
+    },
+    {
+      "name": "Forza Horizon 4",
+      "short": "FH4",
+      "platform": "PC",
+      "category": "Racing",
+      "notes": "Dynamic seasons racing in the UK"
+    }
+  ]
+}
