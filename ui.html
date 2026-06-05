@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Emulator PC Games</title>
+    <link rel="stylesheet" href="ui.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Emulator PC Games</h1>
+        <p>Play PC games on any device</p>
+    </header>
+
+    <section id="game-list">
+        <h2>Available Games</h2>
+        <div id="games"></div>
+    </section>
+
+    <section id="log">
+        <h2>System Log</h2>
+        <pre id="log-output"></pre>
+    </section>
+
+    <script type="module">
+        import { launchGame } from "./launcher.js";
+
+        async function loadGames() {
+            const response = await fetch("./games.json");
+            const data = await response.json();
+            const games = data.games;
+
+            const container = document.getElementById("games");
+            container.innerHTML = "";
+
+            games.forEach(game => {
+                const btn = document.createElement("button");
+                btn.className = "game-button";
+                btn.textContent = game.name;
+                btn.onclick = () => {
+                    log("Launching " + game.name + "...");
+                    launchGame(game.name);
+                };
+                container.appendChild(btn);
+            });
+        }
+
+        function log(message) {
+            const logBox = document.getElementById("log-output");
+            logBox.textContent += message + "\n";
+        }
+
+        loadGames();
+    </script>
+
+</body>
+</html>
