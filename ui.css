@@ -1,0 +1,114 @@
+/* Emulator PC Games — ui.css */
+/* Clean, modern, cross‑platform UI */
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Body */
+body {
+    background: #0f0f0f;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Header */
+header {
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 1rem;
+    opacity: 0.7;
+}
+
+/* Game List */
+#game-list {
+    margin: 20px auto;
+    max-width: 500px;
+}
+
+#game-list h2 {
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+#games {
+    list-style: none;
+    padding: 0;
+}
+
+.game-item {
+    background: #1c1c1c;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+    border: 1px solid #333;
+}
+
+.game-item:hover {
+    background: #292929;
+    border-color: #555;
+}
+
+/* Launch Button */
+#launch-area {
+    margin: 25px 0;
+}
+
+#launch-btn {
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 6px;
+    background: #0078ff;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#launch-btn:disabled {
+    background: #444;
+    cursor: not-allowed;
+}
+
+#launch-btn:hover:not(:disabled) {
+    background: #0060d1;
+}
+
+/* Status Box */
+#status {
+    margin-top: 20px;
+}
+
+#status-text {
+    font-size: 1rem;
+    opacity: 0.85;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    #launch-btn {
+        width: 100%;
+    }
+
+    .game-item {
+        font-size: 1rem;
+    }
+}
